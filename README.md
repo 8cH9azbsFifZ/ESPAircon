@@ -5,12 +5,10 @@ Airconditioning Remote Control
 - Based on the ESP8266 Board
 - IR LED connected to Pin 14 (D5 on NodeMcu)
 
-Build the Software
-==================
+## Build the Software
 TBD
 
-Software Interface
-==================
+## Software Interface
 Uses MQTT to receive a JSON command on the aircon/set MQTT topic.
 All parameters need to be in the JSON message.
 
@@ -28,8 +26,7 @@ Currently nearly no abstraction of the data. So you need to send binary values f
 }
 ```
 
-Data in the JSON Message
-------------------------
+### Data in the JSON Message
 
 - on: Enable the unit
 - temperature: Setpoint of Airconditioning
@@ -39,6 +36,5 @@ Data in the JSON Message
 - timer_value: Hours until the timer action (on/off) will be executed
 
 
-Connecting to OpenHAB
-=====================
+## Connecting to OpenHAB
 
