@@ -37,4 +37,4 @@ Currently nearly no abstraction of the data. So you need to send binary values f
 
 
 ## Connecting to OpenHAB
-
+TBD
