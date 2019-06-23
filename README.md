@@ -1,10 +1,9 @@
 Airconditioning Remote Control
 ==============================
 
-Hardware
-========
-# Based on the ESP8266 Board
-# IR LED connected to Pin 14 (D5 on NodeMcu)
+## Hardware
+- Based on the ESP8266 Board
+- IR LED connected to Pin 14 (D5 on NodeMcu)
 
 Build the Software
 ==================
@@ -32,17 +31,12 @@ Currently nearly no abstraction of the data. So you need to send binary values f
 Data in the JSON Message
 ------------------------
 
-on: Enable the unit
-
-temperature: Setpoint of Airconditioning
-
-fan: 1=high, 2=medium, 4=low
-
-mode: 8=A/C, 2=Dehumidify, 1=Fan only
-
-timer: Enables the timer. When unit is off it serves as the switch-on timer, if the unit is on it switches off after the interval
-
-timer_value: Hours until the timer action (on/off) will be executed
+- on: Enable the unit
+- temperature: Setpoint of Airconditioning
+- fan: 1=high, 2=medium, 4=low
+- mode: 8=A/C, 2=Dehumidify, 1=Fan only
+- timer: Enables the timer. When unit is off it serves as the switch-on timer, if the unit is on it switches off after the interval
+- timer_value: Hours until the timer action (on/off) will be executed
 
 
 Connecting to OpenHAB
