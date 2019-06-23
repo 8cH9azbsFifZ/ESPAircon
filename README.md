@@ -1,10 +1,17 @@
 Airconditioning Remote Control
 ==============================
 
-Based on the ESP8266 Board
+Hardware
+========
+# Based on the ESP8266 Board
+# IR LED connected to Pin 14 (D5 on NodeMcu)
 
-IR LED connected to Pin 14 (D5 on NodeMcu)
+Build the Software
+==================
+TBD
 
+Software Interface
+==================
 Uses MQTT to receive a JSON command on the aircon/set MQTT topic.
 All parameters need to be in the JSON message.
 
@@ -36,3 +43,8 @@ mode: 8=A/C, 2=Dehumidify, 1=Fan only
 timer: Enables the timer. When unit is off it serves as the switch-on timer, if the unit is on it switches off after the interval
 
 timer_value: Hours until the timer action (on/off) will be executed
+
+
+Connecting to OpenHAB
+=====================
+
